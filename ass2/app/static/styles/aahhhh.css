@@ -1,0 +1,314 @@
+body {
+	align-content: center;
+	align-self: center;
+	align-items: center;
+	margin: 0px 0px 50px 0px;
+	padding: 0px;
+	background-color: whitesmoke;
+}
+
+label {
+	color: steelblue;
+	font-size: 13px;
+}
+label span.red {
+	color: tomato;
+}
+input[type=text] {
+	margin-top: 8px;
+	width: 100%;
+	border: 1px solid lightgrey;
+	height: 24px;
+}
+
+select {
+	margin-top: 8px;
+	width: 100%;
+}
+
+/********************
+ *------CLASSES------
+ ********************/
+
+.infobox {
+	font-family: sans-serif;
+	margin: auto;
+	margin-top: 40px;
+	color: dimgrey;
+	align-self: center;
+	background-color: white;
+	padding-top: 0px;
+	outline: lightgrey;
+	box-shadow: 0px 1px lightgrey;
+	border: 1px solid lightgrey;
+}
+
+.inline {
+	display: inline-block;
+}
+
+.formfield {
+/*	margin-top: 50px;*/
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+.formfield .blanktooltip {
+	font-size: 12px;
+  visibility: hidden;
+  background-color: whitesmoke;
+  color: dimgrey;
+  text-align: center;
+  border-radius: 6px;
+  padding: 7px 9px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
+  margin-bottom: -20px;
+}
+
+.formfield .blanktooltip::after {
+  content: " ";
+	position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: whitesmoke transparent transparent transparent;
+}
+.cardinfo {
+	font-size: 14px;
+	color: darkgrey;
+	text-align: center;
+}
+.misc_icon {
+	width: 36px;
+	margin: 20px 10px;
+}
+.misc_desc {
+	font-size: 18px;
+}
+
+.headline {
+	font-family: "Thasadith", sans-serif;
+	margin: auto;
+/*	width: auto;*/
+	font-size: 40px;
+	align-self: center;
+	text-align: center;
+	margin-top: 40px;
+	div {
+		border-bottom: 1px solid white;
+		padding-bottom: 10px;
+		display: inline-block;
+	}
+}
+
+.details {
+	font-size: 24px;
+	color: #24325c;
+	padding: 12px;
+}
+.detail_cat {
+	text-align: right;
+}
+.detail_info {
+	font-size: 20px;
+}
+/********************
+ *--------IDS--------
+ ********************/
+
+#badresults {
+	display: none;
+	width: 500px;
+	font-size: 24px;
+	color: steelblue;
+	text-align: center;
+	div {
+		padding: 20px 50px;
+	}
+}
+
+#basicpage, #detailpage, #charts {
+	display: none;
+}
+
+#searchbox {
+	width: 500px;
+}
+#searchheader {
+	padding-top: 30px;
+	padding-left: 30px;
+	padding-bottom: 25px;
+	background-image: url("../images/banner.jpg");
+	background-position: 10% 20%;
+	border-bottom: 1px solid lightgrey;
+}
+#searchtitle {
+	margin-top: 0px;
+	margin-bottom: 20px;
+	font-style: bold;
+	font-size: 18px;
+}
+#searchform {
+	padding-top: 20px;
+	padding-bottom: 30px;
+	padding-left: 32px;
+	padding-right: 32px;
+	color: steelblue;
+	font-size: 16px;
+}
+#searchlinetwo {
+	margin-top: 12px;
+}
+#cityinput {
+/*	margin-left: 20px;*/
+	width: 45%;
+}
+#stateinput {
+	margin-left: 20px;
+	width: 49%;
+}
+
+#searchdivider {
+	color: lightgrey;
+	border-top: 1px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#autodetectlabel {
+	font-size: 16px;
+}
+
+#buttons {
+	margin-top: 20px;
+}
+#submit, #clear {
+	width: 90px;
+	border: none;
+	color: white;
+	font-family: "Thasadith", sans-serif;
+	padding: 10px;
+}
+#submit {
+	background-color: steelblue;
+	box-shadow: 0px 4px #3d6283;
+}
+#submit:hover {
+	background-color: #5e94c1;
+}
+#clear {
+	background-color: orange;
+	box-shadow: 0px 4px #ef8c39;
+}
+#clear:hover {
+	background-color: #ffb020;
+}
+
+#basicinfocard {
+	color: darkgrey;
+	width: 700px;
+	padding: 20px;
+}
+#location {
+/*	margin: 0px 30px 15px 0px;*/
+	font-family: "Thasadith", sans-serif;
+	font-size: 32px;
+}
+#weather_today {
+	margin-left: 40px;
+	width: 40%;
+	font-size: 20px;
+/*	text-align: center;*/
+}
+#weather_col{
+	width: 50%;
+	text-align: center;
+}
+
+#temp_today {
+/*	width:45%;*/
+	font-size: 128px;
+	font-family: "Thasadith", sans-serif;
+	vertical-align: top;
+}
+#misc_today {
+	width: 100%;
+/*	margin: 20px;*/
+	text-align: center;
+	margin-top: 30px;
+}
+
+#daytodayinfo {
+	width: 1000px;
+	text-align: center;
+	outline: transparent;
+	background-color: transparent;
+	box-shadow: none;
+	border: none;
+}
+#daytodayinfo table {
+	margin: auto;
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 0 10px;
+	th {
+    background-color: steelblue;
+    padding:16px;
+    color: #404040;
+    font-weight: normal;
+  }
+  tr.clickablerow {
+    cursor: pointer;
+  }
+  td {
+  	background-color: white;
+  	padding: 16px;
+  }
+}
+
+#daydetailinfo {
+	width: 500px;
+	padding: 20px 20px;
+	background-image: linear-gradient(white, #2a406c); 
+}
+
+#detailed_details {
+	width: 100%;
+}
+#basic_details{
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	margin-bottom: 24px;
+}
+#hilo_detail {
+	font-size: 36px;
+}
+#weather_detail_icon {
+/*	width: 34%;*/
+}
+
+#detailed_details {
+	color: white;
+	font-weight: bolder;
+	display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 4px;
+  margin: 12px auto;
+  align-items: center;
+}
+
+#toggle {
+	margin: auto;
+	align-self: center;
+	text-align: center;
+	img { cursor: pointer; };
+}
+#toggle_btn {
+	width: 50px;
+}

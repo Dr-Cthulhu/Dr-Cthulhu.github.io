@@ -1,0 +1,340 @@
+
+
+html {
+	font-family: "Montserrat", sans-serif;
+}
+
+body {
+	padding: 0px;
+	margin:0;
+	width: 1080px;
+}
+
+a {
+	text-decoration: none;
+}
+
+input {border:0;outline:0;}
+input:focus {outline:none!important;}
+button {border:0;outline:0;}
+button:focus {outline:none!important;}
+
+.mainpage {
+	position:relative;
+}
+.mainpage::before {
+	position: absolute;
+/*	width: 100%;*/
+	content: '';
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	-webkit-filter: grayscale(100%);
+	background-size: 1080px;
+	background-image: url('../images/glasses.png');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: 0 -75px;
+   z-index:-999;
+}
+.header {
+/*	header: 100px;*/
+width: 1080px;
+   font-family: questrial, century-gothic, sans-serif;
+   background-color: white;
+   padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 184px;
+  justify-content: space-between;
+}
+
+.menu, .otherlinks {
+	display:inline-block;
+}
+.menu {
+	margin-right: 528px;
+	font-size: 11px;
+}
+a {
+  color: lightgrey;
+}
+
+/* visited link */
+a:visited {
+  color: lightgrey;
+}
+
+/* mouse over link */
+a:hover {
+  color: black;
+}
+
+/* selected link */
+a:active {
+  color: lightgrey;
+}
+.otherlinks {
+	margin-left: 18px;
+	font-size: 9px;
+	font-family: arial, serif;
+	color: gray;
+}
+
+.firstsection {
+	width: 1080px;
+	min-height: 388px;
+	padding-top: 95px;
+	background-image: url('../images/lawyer.jpg');
+	background-color: rgb(204, 204, 204);
+	background-size: 1080px;
+	margin-bottom: 0px;
+	background-blend-mode: multiply;
+}
+
+.marketing {
+	background-color: rgb(12, 60, 94);
+	padding-top: 38px;
+	padding-left: 29px;
+/*	margin-top: 95px;*/
+	margin-left: 180px;
+	width: 220px;
+	height: 260px;
+}
+
+.anxiety, .shouting {
+	color: white;
+}
+.anxiety {
+	font-size: 9px;
+}
+.shouting {
+	margin-top: 3px;
+	font-size: 24px;
+	line-height: 24px;
+}
+.echo {
+	font-size: 9px;
+	font-family: sans-serif;
+	font-style: italic;
+	color: rgb(246, 218, 23);
+	margin-top: 10px;
+	margin-bottom: 18px;
+}
+
+.secondsection {
+	width: 1080px;
+	height: 230px;
+/*	background-color: white;*/
+	background-color: white;
+	padding-top: 50px;
+}
+
+.feature {
+	border-spacing: 40px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.featuretitle {
+/*	padding: 20px;*/
+	width: 200px;
+	font-size: 9px;
+	font-family: "Montserrat";
+	font-style: normal;
+	text-align: left;
+}
+.featuredesc {
+	width: 200px;
+	font-family: sans-serif;
+	color: gray;
+	font-size: 8px;
+	line-height: 1.7;
+	margin-top: 10px;
+}
+
+.thirdsection {
+	width: 1080px;
+	height: 148px;
+	background-color: rgb(244, 244, 244);
+	padding-top: 100px;
+	margin: 0px;
+}
+.quote, .quotee {
+	text-align: center;
+}
+.quote {
+	text-transform: uppercase;
+	font-size: 12.5px;
+}
+.quotee {
+	font-family: sans-serif;
+	font-size: 8px;
+	color: gray;
+	line-height: 4;
+}
+
+.fourthsection {
+	width: 1080px;
+	height: 550px;
+	margin: 0px;
+	background-color: rgba(255, 255, 255, 0.7);
+}
+.pricetext {
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 42px;
+}
+.pricetag {
+	font-size: 13px;
+}
+.grease {
+	color: rgb(158, 158, 158);
+	margin-top: 10px;
+	font-size: 8px;
+}
+
+.plancards {
+	text-align: center;
+	margin-top: 60px;
+}
+
+.plancard {
+	display:inline-block;
+	margin-left: 12px;
+	margin-right: 12px;
+	height: 340px;
+	width: 225px;
+	background-color: white;
+	background-position: 0 4.5px;
+/*	background-size: 100%;*/
+/*    background-image: */
+/*        repeating-linear-gradient(45deg, transparent 1px, blue 39px, red 40px, red 40px);*/
+/*        repeating-linear-gradient(to right, transparent 1px, transparent 39px, red 40px, red 40px);*/
+/*	repeating-linear-gradient(to left top, blue, red 20px);*/
+/*background-image: repeating-linear-gradient(45deg, #e66465, #e66465 25px, #9198e5 25px, #9198e5 15px);*/
+	background-image:
+		linear-gradient(135deg, transparent, transparent 45%, lightgrey 30%, lightgrey 30%, transparent 55%, transparent 100%),
+		linear-gradient(45deg, transparent, transparent 45%, lightgrey 30%, lightgrey 30%, transparent 55%, transparent 100%),
+		linear-gradient(90deg, transparent, transparent 45%, lightgrey 30%, lightgrey 30%, transparent 55%, transparent 100%),
+		linear-gradient(180deg, transparent, transparent 45%, lightgrey 30%, lightgrey 30%, transparent 55%, transparent 100%);
+	background-size: 8px 8px;
+}
+.plantitle {
+	text-transform: uppercase;
+	font-size: 9px;
+	margin-top: 40px;
+}
+.planfeatures {
+	font-size: 8px;
+	font-weight: 300;
+	color: rgb(70, 70, 70);
+	margin-top: 13px;
+	line-height: 3;
+}
+.planprice {
+	margin-top: 24px;
+	font-family: arial, sans-serif;
+	font-size: 18px;
+}
+
+.fifthsection {
+	height: 450px;
+	background-image: linear-gradient(0deg, rgba(12, 60, 94,0.8), rgba(12, 60, 94, 0.8)), url('../images/notebook.jpg');
+	background-size: 1080px;
+	height: 204px;
+/*	background-color: rgb(12, 60, 94);*/
+	background-position: 0 -190px;
+/*	background-blend-mode: lighten;*/
+	text-align: center;
+	padding-top: 120px;
+}
+.tagline, .holder {
+	color: white;
+}
+.tagline {
+	text-transform: uppercase;
+}
+.holder {
+	font-family: sans-serif;
+	font-size: 8px;
+	margin-top: 8px;
+}
+
+#subscribe {
+	background-color: rgb(228, 233, 236);
+	height: 34px;
+	width: 188px;
+}
+
+#submit_btn {
+	background-color: rgb(246, 218, 23);
+	margin-top: 18px;
+	padding-left: 9px;
+	padding-right: 9px;
+	height: 29px;
+	font-family: "Montserrat", sans-serif;
+	font-size: 7px;
+	letter-spacing: 0.5px;
+	font-weight: 300;
+}
+
+#buy_btn {
+	background-color: rgb(12, 60, 94);
+	color: white;
+	margin: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	height: 36px;
+	font-size: 8px;
+	font-family: "Montserrat", sans-serif;
+	letter-spacing: 0.5px;
+	font-weight: 300;
+
+}
+
+.footer {
+	background-color: rgb(29, 37, 48);
+	height: 134px;
+	text-align: center;
+	padding-top: 60px;
+}
+.company {
+	text-transform: uppercase;
+	font-size: 10px;
+	color: white;
+}
+.address {
+	font-size: 7px;
+	margin-top: 7px;
+	color: rgb(177, 177, 177);
+}
+.soclink {
+	display:inline-block;
+	background-color: transparent;
+	height: 24px;
+	margin-top: 16px;
+	margin-left: 6px;
+	margin-right: 6px;
+}
+.soc_img {
+	width: 20px;
+	background-color: transparent;
+}
+
+#fb_btn, #twit_btn, #insta_btn, #utoob_btn, #dyn_btn {
+	background-color: transparent;
+}
+
+#try_btn {
+	background-color: rgb(246, 218, 23);
+	margin-top: 24px;
+	padding-left: 16px;
+	padding-right: 16px;
+	text-transform: uppercase;
+	height: 29px;
+	font-family: "Montserrat", sans-serif;
+	font-size: 8px;
+	letter-spacing: 0.5px;
+	font-weight: 300;
+}
